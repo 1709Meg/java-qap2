@@ -66,9 +66,9 @@ public class Money {
 
     public String toString() {
         if (cents < 10) {
-            return (dollars + "." + "0" + cents);
+            return ("$" + dollars + "." + "0" + cents);
         } else {
-            return (dollars + "." + cents);
+            return ("$" + dollars + "." + cents);
         }
     }
 

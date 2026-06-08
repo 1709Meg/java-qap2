@@ -29,6 +29,13 @@ public class MyPoint {
         this.y = y;
     }
 
+    public int[] getXY() {
+        int[] xy = new int[2];
+        xy[0] = x;
+        xy[1] = y;
+        return xy;
+    }
+
     public void setXY(int x, int y) {
         this.y = y;
         this.x = x;
