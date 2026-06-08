@@ -39,6 +39,14 @@ public class MyRectangle {
         return 2 * (getWidth() + getHeight());
     }
 
+    public MyPoint getCenter() {
+
+        int centerX = (topLeft.getX() + bottomRight.getX()) / 2;
+        int centerY = (topLeft.getY() + bottomRight.getY()) / 2;
+
+        return new MyPoint(centerX, centerY);
+    }
+
     public String toString() {
         return "MyRectangle[topLeft=" + topLeft +
                 ", bottomRight=" + bottomRight + "]";
